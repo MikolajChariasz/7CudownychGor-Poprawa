@@ -1,0 +1,173 @@
+@charset "utf-8";
+body {
+	background-color: dimgrey;
+}
+.ankieta {
+	background-color: white;
+}
+div {
+	position: relative;
+	border: medium solid black;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-family: Calibri Light;
+	border-radius: 20px;
+	font-size: 3vw;
+	width: 100%;
+	margin-bottom: 3px;
+	display: flex;
+}
+.logo {
+	font-family: poppins, sans-serif;
+	height: auto;
+	background-color: none;
+	font-size: 9.5vw;
+	font-weight: bolder;
+}
+.tytul2 {
+	font-family: poppins, sans-serif;
+	height: auto;
+	background-color: none;
+	font-size: 7vw;
+	font-weight: bolder;
+	border: none;
+}
+.menu1 {
+	height: auto;
+	border: none;
+	background-color: none;
+}
+.menu4 {
+	height: auto;
+	display: none;
+	border: none;
+	background-color: none;
+	width: 49%;
+	float: left;
+}
+.menu2 {
+	display: none;
+	height: auto;
+	background-color: none;
+}
+.menu3 {
+	height: auto;
+	background-color: none;
+}
+a {
+	text-decoration: none;
+	color: darkgrey;
+	text-align: center;
+	align-self: center;
+}
+p {
+	text-decoration: none;
+	margin-right: 20px;
+	color: darkgrey;
+	text-align: center;
+	align-self: center;
+}
+a:hover {
+	text-decoration: underline;
+}
+.stopka {
+	width: 100%;
+	position: static;
+	text-align: right;
+	border: none;
+	color: darkgrey;
+	font-family: poppins, sans-serif;
+	font-size: 20px;
+	padding-top: 10px;
+}
+.tytul {
+	font-family: poppins, sans-serif;
+	height: auto;
+	background-color: none;
+	font-size: 7vw;
+	font-weight: bolder;
+	border: none;
+}
+img {
+	position: relative;
+	border: medium solid black;
+	border-radius: 20px;
+	width: 50%;
+	float: left;
+}
+.opis {
+	position: relative;
+	border: none;
+	width: 45%;
+	float: left;
+	margin-left: 30px;
+	font-size: 2vw;
+	text-align: left;
+	color: darkgrey;
+}
+label,h2 {
+	margin-left: 2px;
+	font-size: 2vw;
+	text-align: left;
+	font-family: Calibri Light;
+	color: darkgrey;
+}
+table {
+	border: none;
+	border-radius: 20px;
+	width: 100%
+}
+td {
+	border: medium solid black;
+	text-align: center;
+	align-items: center;
+	border-radius: 20px;
+	padding: 2px;
+	font-size: 2vw;
+	width: 60px;
+}
+.inna {
+	height: 59px;
+	width: 50%;
+	font-size: 3vw;
+}
+ul {
+	list-style-type: circle;
+	color: darkgrey;
+}
+li {
+	margin-bottom: 10px;
+	font-size: 4vw;
+}
+.biale {
+	animation-name: biale;
+	animation-duration: 2s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+@keyframes biale {
+  from {color: black;} 
+  to {color: white; text-shadow: 3px 3px 7px black}
+}
+@media screen and (max-width:1200px) {
+	.menu1 {display:none;}
+	.menu4 {display: flex;}
+	.opis {width: 47.5%; float: right; margin-left: 0}
+	.tytul {width: 47.5%; height: auto; float: right; font-size: 5vw; text-align: left;}
+	label,h2 {font-size: 6wv;}
+	.tytul2 {width: 100%; height: auto; font-size: 8vw;}
+	.menu3 {width: 49.5%; float:right; min-height: 279px; font-size: 3vw;}
+}
+@media screen and (max-width:600px) {
+	.menu4 {display:none;}
+	.menu2 {display:flex;}
+	img {width: 100%}
+	.opis {width: 95%; text-align: center; font-size: 4vw}
+	a {font-size: 4vw;}
+	.tytul {width: 100%; height: auto; font-size: 10vw;}
+	label,h2 {font-size: 4vw;}
+	.tytul2 {width: 100%; height: auto;font-size: 10vw;}
+	.menu3{width: 100%;}
+}

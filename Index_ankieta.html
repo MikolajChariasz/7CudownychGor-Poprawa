@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang=pl>
+<head>
+<meta charset="utf-8">
+<title>Ankieta</title>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+<body>
+<form action="mailto:mikispeedcuber@gmail.com" method=post>
+	<div class="tytul2">Ankieta</div>
+	<br>
+<label for=imie>Imię: </label><input type=text id=imie name=imie maxlength=10 size=12>
+<br>
+<label for=wiek>Ile masz lat? </label><input type=number id=wiek name=wiek min=10 max=120>
+<br>
+<label for=powod>Czemu odwiedziłeś/aś tę stronę? </label><input type=text id=powod name=powod size=20>
+<br><br><hr>
+	
+<h2 >Płeć</h2>
+<input type=radio name=plec id=kobieta value=kobieta> <label for=kobieta>Kobieta</label><br>
+<input type=radio name=plec id=mezczyzna value=mezczyzna> <label for=mezczyzna>Mężczyzna</label><br>
+<input type=radio name=plec id=inna value=inna> <label  for=inna>Nie chcę podawać</label><br>
+<br><br><hr>
+	
+<h2>Która góra najbardziej Ci się spodobała?</h2>
+<input type=checkbox name=dobre id=1 value=1> <label for=1>Góra 1</label><br>
+<input type=checkbox name=dobre id=2 value=2> <label for=2>Góra 2</label><br>
+<input type=checkbox name=dobre id=3 value=3> <label for=3>Góra 3</label><br>
+<input type=checkbox name=dobre id=4 value=4> <label for=4>Góra 4</label><br>
+<input type=checkbox name=dobre id=5 value=5> <label for=5>Góra 5</label><br>
+<input type=checkbox name=dobre id=6 value=6> <label for=6>Góra 6</label><br>
+<input type=checkbox name=dobre id=7 value=7> <label for=7>Góra 7</label><br>
+<br><br><hr>
+	
+	<h2>Czy po obejrzeniu tej strony zamierzasz <br> zaplanować wyjazd w góry? Dlaczego?</h2>	
+<label for=tekst></label>
+<textarea name=tekst id=tekst cols=50 rows=10 maxlength=50>Wpisz tu swoją odpowiedź</textarea><br>
+<input type="reset">
+<input type=submit>
+<form>
+<br><br><hr>
+<div class=stopka><a href=index.html>Powrót do strony głównej</a></div>
+<div class=stopka><p>Mikołaj Chariasz Klasa 2Ta</p></div>
+</body>
+</html>
